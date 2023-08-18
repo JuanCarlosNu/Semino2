@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+    #menu-button {
+    position: fixed;
+    top: 16px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: rgb(18, 17, 17);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+  }
+  #menu-button:hover{
+    background-color: #1e8c30;
+  }
+   
+  #menu-background{
+    background-color: #222;
+  }
+  
+  #menu-container {
+    position: fixed;
+    top: 0;
+    right: -30%; /* Set to 100% to hide the menu initially */
+    width: 30%;
+    height: 100%;
+    transition: right 0.3s ease; /* Smooth transition effect */
+    z-index: 998;
+  }
+  
+  #menu-container ul {
+    list-style: none;
+    padding: 0;
+    background-color: #222;
+    
+  }
+  
+  #menu-container li {
+    padding: 15px;
+  }
+  
+  #menu-container a {
+    color: #fff;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 768px) {
+    #menu-container {
+      top: 60px;
+      
+  }
+    </style>
+</head>
+<body>
+    <div class="pag" style="width: 100%;height: 800px;background-color: grey;">
+
+        <a href="#projects"><img src="logotransparente.png" 
+            style="height: 50px;position:fixed;top: 6px;left: 20px;z-index: 50;"></a>
+          
+          <button id="menu-button">MENU</button>
+          
+          <div id="menu-background">
+          
+             <div id="menu-container">
+          
+               <ul>
+      
+                <li><a href="#section1" style="color: white;font-family: 'Angkor';" id="angkor" >Angkor</a></li>
+                <li><a href="#section2"  style="color: white;font-family: 'Caveat';" id="caveat" >Caveat</a></li>
+                <li><a href="#section3" style="color: White;font-family:'Cinzel';" id="cinzel">Cinzel</a></li>
+                <li><a href="#section4" style="color: white;font-family: 'Kablammo';" id="kablammo">kablammo</a></li>
+                <li><a href="#section5" style="color:white;font-family: 'Indie Flower';" id="indie">Indie Flower</a></li>
+                <li><a href="#section6" style="color:white;font-family: 'Josefin Sans';" id="josefin">Josefin</a></li>
+                <li><a href="#section7" style="color:white;font-family: 'Notable';" id="notable">Notable</a></li>
+      
+               </ul>
+             </div>
+         </div>
+
+    </div>
+    <script>
+
+        //this DoMcontentLoaded allows us to put the script tag anywhere.
+
+    document.addEventListener('DOMContentLoaded', function () {
+  
+        const menuButton = document.getElementById('menu-button');
+
+        const menuContainer = document.getElementById('menu-container');
+      
+        menuButton.addEventListener('click', function () {
+          if (menuContainer.style.right === '0%') {
+            menuContainer.style.right = '-30%';
+          } else {
+            menuContainer.style.right = '0%';
+          }
+        });
+      });
+      </script>
+</body>
+</html>

@@ -2,13 +2,41 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/DEFenitive/defenitive.css"> 
+    <link rel="stylesheet" href="/Landing Page/components/menu/menu.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
 </head>
 <body>
+    <div class="navBar">
+
+        <a href="#About"><img src="logotransparente.png" 
+            style="height: 50px;position:fixed;top: 6px;left: 20px;z-index: 350;"></a>
+          
+          <button id="menu-button">MENU</button>
+          
+          <div id="menu-background">
+          
+             <div id="menu-container">
+          
+               <ul>
+      
+                <li><a href="#section1" style="color: white;font-family: 'Angkor';" id="angkor" >Angkor</a></li>
+                <li><a href="#section2"  style="color: white;font-family: 'Caveat';" id="caveat" >Caveat</a></li>
+                <li><a href="#section3" style="color: White;font-family:'Cinzel';" id="cinzel">Cinzel</a></li>
+                <li><a href="#section4" style="color: white;font-family: 'Kablammo';" id="kablammo">kablammo</a></li>
+                <li><a href="#section5" style="color:white;font-family: 'Indie Flower';" id="indie">Indie Flower</a></li>
+                <li><a href="#section6" style="color:white;font-family: 'Josefin Sans';" id="josefin">Josefin</a></li>
+                <li><a href="#section7" style="color:white;font-family: 'Notable';" id="notable">Notable</a></li>
+      
+               </ul>
+             </div>
+         </div>
+         <script src="/Landing Page/components/menu/menu.js"></script>
+    </div>
+
     <section class="About" id="About">
-        <div class="navigation_containe">
+        <div class="navigation_container">
             <div class="promo__next" onclick="slide()" onmouseover="mOver()" onmouseout="mOut()" id="NB"></div>
   
              <div class="promo__next_dark" id="darkie"></div>
