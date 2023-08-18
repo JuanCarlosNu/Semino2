@@ -70,7 +70,7 @@
     background-color:black;
     z-index: 97;
 }
-button{
+.button_back{
     position: absolute;
     bottom: 50%;
     right: 80px;
