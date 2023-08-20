@@ -60,6 +60,7 @@ background-color: #f5f5f5;
       width: 100%;
       opacity: 1;
       padding: 10px 10px;
+      
   }
 
   .img_container_mobile{
@@ -122,9 +123,7 @@ background-color: #f5f5f5;
       background-size: cover;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
   }
-  .arq_content
-
-      {
+  .arq_content {
          
       position:absolute;
       left:0px;
@@ -135,12 +134,8 @@ background-color: #f5f5f5;
       font-weight:bolder;
       color: white;
       color: rgb(248, 238, 238);
-      
-
-     
-/*            background-color: aqua;*/
-  
-  }
+      /*background-color: aqua;*/
+    }
 
   .arq_content{
       text-align: center;
