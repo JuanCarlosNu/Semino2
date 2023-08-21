@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/Semino2/Landing Page/components/Works/WorksStyles.css">
     <link rel="stylesheet" href="/Semino2/Landing Page/components/contact section/styles.css">
     
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
@@ -27,6 +28,34 @@
         -webkit-transform:translateY(-21px)translateZ(0);
         transform:translateY(-21px)translateZ(0)
 } 
+.acerca{
+  position: absolute;
+  top: 220%;
+
+  
+}
+.contact{
+  position: absolute;
+  top: 355%;
+}
+
+.about-us-section {
+  background: linear-gradient(to bottom, #f5f5f5, #dcdcdc);
+}
+.about-us-image {
+  width: 100%; /* Adjust as needed */
+  max-width: 800px; /* Set a maximum width for responsiveness */
+  margin-left: 0; /* Center the image horizontally */
+  display: block;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+}
+.about-us-content {
+    display: flex;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  color: white; /* Text color on the overlay */
+  padding: 40px; /* Add padding to the content for better readability */
+  text-align: center; /* Center-align the content */
+}
 
        
       
@@ -151,15 +180,30 @@
 
         </div>
     </section>
+    <section class="acerca" >
+      <div class="about-us-section">
+        <div class="about-us-content">
+            <img class="about-us-image" src="/Semino2/Landing Page/components/mision/aboutPhoto.webp" alt="Architect Firm Office">
+            <div>
+                <h2>Acerca de Nosotros</h2><br>
+          <p style="margin-left: 10px;">SSA es un estudio interdisciplinario enfocado en el diseño y la arquitectura.
+            Con decidcación a proyectos de variedad de escalas, diseño de mobiliario, objetos y sistemas constructivos
+             moudlares. Participando activamente en concursos nacionales e internacionales.<br>
+            Nuestra oficina está impulsada por jóvenes arquitectos, ingenieros, interioristas, diseñadores gráficos, industriales que diseñan y desarrollan conjuntamente proyectos desde los primeros bocetos hasta la supervisión final en obra.
+          <br> En nuestro proceso de trabajo aparece el diseño sustentable como eje principal de nuestros proyectos.
+            El estudio de los nuevos sistemas de construcción, la transformación y evolución de las ciudades, 
+            la innovación tecnológica y el diseño eficiente es lo que nos motiva a seguir creciendo.</p>
+
+            </div>
+          
+        </div>
+     
+        
+      </div>
+
+    </section>
    
-      <section >
-      <div class="last" class="contact-section" 
-      style="width: 100%;
-      height: 500px;
-      position: absolute;
-      top: 220%;
-      ">
-       
+      <section class="contact" id="contact" > 
         <div class="contact-section">
           <div class="contact-info">
               <div class="contact-item">
@@ -239,17 +283,15 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.324870013133!2d-60.654714424535584!3d-32.9424312716753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab40a3f0aa93%3A0xfdd94b1f4357bc27!2sSta%20Fe%202144%2C%20S2000%20AUJ%2C%20Santa%20Fe!5e0!3m2!1sen!2sar!4v1692389932862!5m2!1sen!2sar" 
           width="90%" 
           height="450"
-          style="border:10px solid rgb(112, 222, 112); margin-left: 50px;"
+          style="border:10px solid green; margin-left: 50px;"
           allowfullscreen=""
            loading="lazy" 
            referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <script src="script.js"></script>
-      </div>
-        
-    
-    <script src="/Semino2/Landing Page/components/contact section/script.js"></script>
+      </div>   
+            <script src="/Semino2/Landing Page/components/contact section/script.js"></script>
     </section>
+   
+   
     
 </body>
 </html>
