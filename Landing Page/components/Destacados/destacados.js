@@ -40,7 +40,7 @@ function mOver() {
   };
   
   function mOut() {
-    pages[currentIndex].style.left= '-100px';  };
+    pages[currentIndex].style.left= '-120px';  };
 
     function back(){
 
