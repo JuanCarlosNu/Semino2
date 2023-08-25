@@ -3,12 +3,20 @@ body {
     margin: 0;
     padding: 0;
 }
+.contact{
+    width: 100%;
+}
 
 .contact-section {
     display: flex;
     justify-content: space-between;
     padding: 40px;
 }
+
+.contact-item p {
+    margin: 20px;
+}
+   
 
 .contact-info {
     flex: 1;
