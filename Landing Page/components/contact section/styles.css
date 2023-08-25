@@ -16,6 +16,11 @@ body {
 .contact-item p {
     margin: 20px;
 }
+.contact_info_socialM{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
    
 
 .contact-info {
