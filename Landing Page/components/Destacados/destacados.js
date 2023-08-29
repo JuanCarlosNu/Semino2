@@ -12,6 +12,10 @@ const slide = ()=>{
     document.getElementById('darkie').style.zIndex = (current - 1);  
     current = (current - 1);
 
+    //identify the back button element
+
+    const flecha = document.getElementById("flecha");
+
     
     pages[currentIndex].style.left= '-100%'; /*slides the page to the left*/ 
 
@@ -26,8 +30,10 @@ const slide = ()=>{
         console.log(currentIndex);
         console.log(pages.length-1);
 
-        if (currentIndex === pages.length ){
-           console.log("yes");
+        if (currentIndex === pages.length - 1 ){
+           flecha.style.transform= "rotate(180deg)";
+           flecha.style.zIndex= 550;
+           flecha.onclick= "back()";
 
         }
       
