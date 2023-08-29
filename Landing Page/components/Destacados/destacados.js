@@ -1,20 +1,33 @@
 const pages = document.querySelectorAll(".page");
 
 
-let currentIndex= 0;
+let currentIndex= 0; ///for the slides
  
- let current = 100;
+ let current = 100;   /// for the dark overlay
+
+
+ //identify the back button element
+
+ const flecha = document.getElementById("flecha");
    
 
 
 const slide = ()=>{
-    //move the darkie square 1 grade deaper
-    document.getElementById('darkie').style.zIndex = (current - 1);  
-    current = (current - 1);
+//
+if (currentIndex === pages.length - 1 ){
+  flecha.style.transform= "rotate(180deg)";
 
-    //identify the back button element
+       back();}
 
-    const flecha = document.getElementById("flecha");
+       else{
+
+
+   //move the darkie square 1 grade deaper
+   
+     document.getElementById('darkie').style.zIndex = (current - 1);  
+     current = (current - 1);
+
+    
 
     
     pages[currentIndex].style.left= '-100%'; /*slides the page to the left*/ 
@@ -25,20 +38,12 @@ const slide = ()=>{
 
  
         currentIndex = currentIndex + 1;
-        
-        console.log("here");
-        console.log(currentIndex);
-        console.log(pages.length-1);
+
+        //ROTATE ARROW LOGO IN LAST SLIDE
 
         if (currentIndex === pages.length - 1 ){
-           flecha.style.transform= "rotate(180deg)";
-           flecha.style.zIndex= 550;
-           flecha.onclick= "back()";
-
-        }
-      
-        
-    }
+          flecha.style.transform= "rotate(180deg)";}
+          }}
 
 
 function mOver() {
@@ -48,7 +53,10 @@ function mOver() {
   function mOut() {
     pages[currentIndex].style.left= '-120px';  };
 
+
     function back(){
+      
+     
 
         //reset index and pages positions
         currentIndex = 0;
