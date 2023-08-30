@@ -26,13 +26,14 @@
     
     }
     #flecha{
-        
+        transition: all 1s ease;
         z-index: 205;
         width: 50px;
         height: 50px;
         position: absolute;
         right: 15px;
         bottom: 25px;
+       
     }
     .container{
         width: 100%;
@@ -79,7 +80,8 @@
         background-color:black;
         z-index: 97;
     }
-    .button_back{
+
+   {/* .button_back{
         cursor: pointer;
         position: absolute;
         bottom: 50%;
@@ -89,8 +91,7 @@
         height: 60px;
         font-family: 'Courier New', Courier, monospace;
         font-size: x-large;
-       
-        
-    }
+       }*/}
+
 
 

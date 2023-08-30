@@ -9,13 +9,18 @@ let currentIndex= 0; ///for the slides
  //identify the back button element
 
  const flecha = document.getElementById("flecha");
+
+ let rotation = 0
    
 
 
 const slide = ()=>{
 //
 if (currentIndex === pages.length - 1 ){
-  flecha.style.transform= "rotate(180deg)";
+
+  rotation += 180;
+
+  flecha.style.transform= `rotate(${rotation}deg)`;
 
        back();}
 
@@ -33,16 +38,23 @@ if (currentIndex === pages.length - 1 ){
     pages[currentIndex].style.left= '-100%'; /*slides the page to the left*/ 
 
 
-    pages[currentIndex + 1].style.left= '-100px';/*makes current page stand a little left fo us to see the next*/ 
+    pages[currentIndex + 1].style.left= '-120px';/*makes current page stand a little left fo us to see the next*/ 
 
 
- 
+        console.log(currentIndex);
+
+        //increment index
+
         currentIndex = currentIndex + 1;
 
         //ROTATE ARROW LOGO IN LAST SLIDE
 
+console.log(currentIndex);
+
         if (currentIndex === pages.length - 1 ){
-          flecha.style.transform= "rotate(180deg)";}
+          
+          rotation += 180;
+          flecha.style.transform= `rotate(${rotation}deg)`;}
           }}
 
 
