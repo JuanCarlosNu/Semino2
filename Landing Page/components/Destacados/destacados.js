@@ -78,13 +78,17 @@ function mOver() {
         pages[3].style.left="0";
 
         //reset darkie z-indes and current
+    
           function resetDarkie(){
             current = 100;
             document.getElementById('darkie').style.zIndex= current;
                                 }
-         setTimeout(resetDarkie, 1000);   
+            setTimeout(resetDarkie, 1000);   
                     
-        }
+        };
+        
+
+     
     
 
 
